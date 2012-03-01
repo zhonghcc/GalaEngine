@@ -18,16 +18,21 @@ function loadScriptString(code){
 	document.body.appendChild(script);
 }
 function Init(){
+	loadScript("jquery.js");
 	loadScript("Libraries.js");
 	ConfigInit();
-	GalaStart();
+	//GalaStart();
 }
 function GalaStart(){
-	var node=document.createElement("input");
-	node.type="button";
-	node.value="click!";
-	node.onclick=function(){hello();};
-	document.body.appendChild(node);
+//	var node=document.createElement("input");
+//	node.type="button";
+//	node.value="click!";
+//	node.onclick=function(){hello();};
+//	document.body.appendChild(node);
+var $bt=$("<input>").attr("type","button");
+$bt.attr("value","click me");
+$bt.click(function (){$("#tst").toggle(500)})
+$(document.body).append($bt);
 }
 function ConfigInit(){
 	

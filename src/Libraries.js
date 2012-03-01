@@ -2,7 +2,7 @@
  * @author Zhonghcc
  */
 function hello(){
-	document.write("hello");
+	//document.write("hello");
 }
 var EventUtil={
 	addHandler:function(element,type,handler){
