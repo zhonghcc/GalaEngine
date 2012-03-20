@@ -34,6 +34,16 @@ $bt.attr("value","click me");
 $bt.click(function (){$("#tst").toggle(500)})
 $(document.body).append($bt);
 }
+
 function ConfigInit(){
-	
+ //   loadXML();  
+ /*   var configData=loadXML("config.xml");
+    alert(configData);
+    alert($(xmldom).text());
+    */
+   var configxml=new XML("config.xml");
+   //configxml.Ajax();
+   var config=configxml.getJSON();
+   alert(config.resource.root);
+   //alert(xml1.message);
 }

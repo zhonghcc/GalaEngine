@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <config>
-	<resource path="../res/">
+	<resource>
+		<root>../res/</root>
+		<background>bg/</background>
+		<cg>cg/</cg>
+		<bgm>bgm/</bgm>
+	</resource>
 </config>
